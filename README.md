@@ -8,3 +8,5 @@ Example:
 /gatherspawnadd tree default
 
 #Note:you will need netstream2 in order to make it work properly.
+
+# Further plugins will be added here soon
