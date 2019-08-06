@@ -6,3 +6,5 @@ The gathering plugin is designed to allow players to gather resources from rocks
 To set a rock or tree spawner, just do /gatherspawnadd [entity] [table]
 Example: 
 /gatherspawnadd tree default
+
+#Note:you will need netstream2 in order to make it work properly.
