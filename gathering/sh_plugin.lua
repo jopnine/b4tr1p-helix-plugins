@@ -63,7 +63,7 @@ if SERVER then
 	end
 
 	function PLUGIN:LoadData()
-		self.gatherPoints = self:getData()
+		self.gatherPoints = self:GetData()
 		self:Initialize()
 	end
 
