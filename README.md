@@ -7,6 +7,10 @@ To set a rock or tree spawner, just do /gatherspawnadd [entity] [table]
 Example: 
 /gatherspawnadd tree default
 
+# NPC SPAWNER
+This plugin add the possibility to make custom NPC spawns around the map and manage it's settings in-game.
+
+
 #Note:you will need netstream2 in order to make it work properly.
 
 # Further plugins will be added here soon
