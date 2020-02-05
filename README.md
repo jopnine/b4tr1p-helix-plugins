@@ -13,4 +13,12 @@ This plugin add the possibility to make custom NPC spawns around the map and man
 
 #Note:you will need netstream2 in order to make it work properly.
 
+# Doorkick
+
+This plugin add the option to breach the door with a animation, if you want to change the default animation just edit the client:ForceSequence("kickdoorbaton") in order to make it work
+
+Command:
+/doorkick 
+
+
 # Further plugins will be added here soon
