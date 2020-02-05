@@ -36,7 +36,7 @@ ix.command.Add("Doorkick", {
 									print(client:GetCharacter():GetAttribute("str", 0))
 									client:ConsumeStamina(110)
 								--	 client:ForceSequence("adoorkick") --Entra que nem maluco
-									client:ForceSequence("kickdoor")
+									client:ForceSequence("kickdoorbaton")
 									entity:Fire("unlock")
 									entity:Fire("open")
 								else
@@ -62,7 +62,8 @@ ix.command.Add("Doorkick", {
 						print(client:GetCharacter():GetAttribute("str", 0))
 						client:ConsumeStamina(110)
 					--	 client:ForceSequence("adoorkick") --Entra que nem maluco
-						client:ForceSequence("kickdoor")
+					--	client:ForceSequence("kickdoor")
+						client:ForceSequence("kickdoorbaton")
 						entity:Fire("unlock")
 						entity:Fire("open")
 					else
