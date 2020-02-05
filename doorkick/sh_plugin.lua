@@ -37,8 +37,11 @@ ix.command.Add("Doorkick", {
 									client:ConsumeStamina(110)
 								--	 client:ForceSequence("adoorkick") --Entra que nem maluco
 									client:ForceSequence("kickdoorbaton")
+									timer.Simple( 0.5, function()
+											
 									entity:Fire("unlock")
 									entity:Fire("open")
+									end )
 								else
 									client:Notify("You don't have enough stamina!")
 								end
@@ -64,8 +67,11 @@ ix.command.Add("Doorkick", {
 					--	 client:ForceSequence("adoorkick") --Entra que nem maluco
 					--	client:ForceSequence("kickdoor")
 						client:ForceSequence("kickdoorbaton")
-						entity:Fire("unlock")
-						entity:Fire("open")
+						timer.Simple( 0.5, function()
+											
+									entity:Fire("unlock")
+									entity:Fire("open")
+									end )
 					else
 						client:Notify("You don't have enough stamina!")
 					end
