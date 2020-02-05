@@ -16,7 +16,7 @@ ix.config.Add("combineonly", false, "Whether or not doorkick is restricted to co
 
 
 ix.command.Add("Doorkick", {
-    description = "Chuta a porta.",
+    description = "Kick the door.",
     adminOnly = true,
 
 	OnRun = function(self, client, arguments)
@@ -40,19 +40,19 @@ ix.command.Add("Doorkick", {
 									entity:Fire("unlock")
 									entity:Fire("open")
 								else
-									client:Notify("Você não possui stamina suficiente!")
+									client:Notify("You don't have enough stamina!")
 								end
 							else
-								client:Notify("Você não é forte o suficiente para realizar esta ação!")
+								client:Notify("You are not strong or sufficient to perform this action!")
 							end
 						else
-							client:Notify("Você não está perto suficiente!")
+							client:Notify("You are not close enough!")
 						end
 					else
-						client:Notify("Você não está olhando para uma porta!")
+						client:Notify("You are not looking at a door!")
 					end
 		else
-		client:Notify("Você não é um combine!")
+		client:Notify("You are not a combine")
 		end
 	else
 		if (IsValid(entity) and entity:IsDoor() and !entity:GetNetVar("disabled")) then
@@ -66,20 +66,17 @@ ix.command.Add("Doorkick", {
 						entity:Fire("unlock")
 						entity:Fire("open")
 					else
-						client:Notify("Você não possui stamina suficiente!")
+						client:Notify("You don't have enough stamina!")
 					end
 				else
-					client:Notify("Você não é forte o suficiente para realizar esta ação!")
+					client:Notify("You are not strong enough to perform this action!")
 				end
 			else
-				client:Notify("Você não está perto suficiente!")
+				client:Notify("You are not close enough!")
 			end
 		else
-			client:Notify("Você não está olhando para uma porta!")
+			client:Notify("You are not looking at a door!")
 		end
 	end
-    --    if (ix.anim.GetModelClass(model) == "metrocop" or ix.anim.GetModelClass(model) == "mpf") then
-			
---		end
     end
 })
